@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-    return (
-        <div>
-             <header className="hide-when-mobile">
-        <h1>Courses 4 Arab</h1>
+  return (
+    <div>
+      <header className="hide-when-mobile">
+     <Link to='/'>
+         <h1>Courses 4 Arab</h1>
+     </Link>
         <ul className="flex">
           <li className="main-list">
-            <a className="main-link" href="/html">
-              {" "}
-              HTML{" "}
-            </a>
+            <NavLink className="main-link" to="/html">
+              HTML
+            </NavLink>
             <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
@@ -24,10 +27,9 @@ const Header = () => {
             </ul>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/css">
-              {" "}
-              CSS{" "}
-            </a>
+            <NavLink className="main-link" to="/css">
+              CSS
+            </NavLink>
             <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
@@ -52,10 +54,9 @@ const Header = () => {
             </ul>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/javascript">
-              {" "}
-              JavaScript{" "}
-            </a>
+            <NavLink className="main-link" to="/javascript">
+              JavaScript
+            </NavLink>
             <ul className="sub-ul sub-of-js">
               <li>
                 <a href="">coming soon🔥</a>
@@ -132,8 +133,8 @@ const Header = () => {
           </div>
         </div>
       </header>
-        </div>
-    );
-}
+    </div>
+  );
+};
 
 export default Header;
