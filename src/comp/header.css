@@ -1,0 +1,10 @@
+/* ==================
+    3. header of mobile
+===================== */
+.show-when-mobile {
+    display: none;
+  }
+  
+  .ali{
+    background-color:orange;
+  }
