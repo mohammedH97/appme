@@ -1,10 +1,11 @@
 import Header from "../comp/header";
 import Footer from "../comp/footer";
+import Main from "../comp/main";
 const Html = () => {
   return (
     <div>
      <Header></Header>
-      <main>HTML Page</main>
+      <Main a='html'></Main>
       <Footer></Footer>
     </div>
   );
